@@ -1,0 +1,195 @@
+{
+  "session": {
+    "new": false,
+    "sessionId": "SessionId.c7ede6a7-42aa-41d4-a2d4-813b8c4fefdf",
+    "application": {
+      "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+    },
+    "attributes": {
+      "botMessages": [
+        {
+          "text": "What type of transactions do you want to see?",
+          "type": "text",
+          "actions": [
+            {
+              "postback": {
+                "variables": {
+                  "txnType": "deposits"
+                },
+                "state": "askTxnType"
+              },
+              "label": "deposits",
+              "type": "postback"
+            },
+            {
+              "postback": {
+                "variables": {
+                  "txnType": "withdrawals"
+                },
+                "state": "askTxnType"
+              },
+              "label": "withdrawals",
+              "type": "postback"
+            },
+            {
+              "postback": {
+                "variables": {
+                  "txnType": "payments"
+                },
+                "state": "askTxnType"
+              },
+              "label": "payments",
+              "type": "postback"
+            },
+            {
+              "postback": {
+                "variables": {
+                  "txnType": "checks"
+                },
+                "state": "askTxnType"
+              },
+              "label": "checks",
+              "type": "postback"
+            },
+            {
+              "postback": {
+                "variables": {
+                  "txnType": "debits"
+                },
+                "state": "askTxnType"
+              },
+              "label": "debits",
+              "type": "postback"
+            },
+            {
+              "postback": {
+                "variables": {
+                  "txnType": "credits"
+                },
+                "state": "askTxnType"
+              },
+              "label": "credits",
+              "type": "postback"
+            }
+          ]
+        }
+      ],
+      "botMenuResponseMap": {
+        "deposits": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "txnType": "deposits"
+              },
+              "state": "askTxnType"
+            },
+            "label": "deposits",
+            "type": "postback"
+          }
+        },
+        "withdrawals": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "txnType": "withdrawals"
+              },
+              "state": "askTxnType"
+            },
+            "label": "withdrawals",
+            "type": "postback"
+          }
+        },
+        "payments": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "txnType": "payments"
+              },
+              "state": "askTxnType"
+            },
+            "label": "payments",
+            "type": "postback"
+          }
+        },
+        "checks": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "txnType": "checks"
+              },
+              "state": "askTxnType"
+            },
+            "label": "checks",
+            "type": "postback"
+          }
+        },
+        "debits": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "txnType": "debits"
+              },
+              "state": "askTxnType"
+            },
+            "label": "debits",
+            "type": "postback"
+          }
+        },
+        "credits": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "txnType": "credits"
+              },
+              "state": "askTxnType"
+            },
+            "label": "credits",
+            "type": "postback"
+          }
+        }
+      },
+      "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.032cc7e3-e575-4aed-99d4-365621816f31",
+    "intent": {
+      "name": "CommandBot",
+      "slots": {
+        "command": {
+          "name": "command",
+          "value": "debits"
+        }
+      }
+    },
+    "locale": "en-US",
+    "timestamp": "2017-11-21T21:47:36Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}

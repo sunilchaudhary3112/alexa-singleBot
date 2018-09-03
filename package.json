@@ -1,0 +1,31 @@
+{
+  "name": "bots_samples_alexa_singleBot",
+  "version": "0.1.0",
+  "description": "Oracle Bots Nodejs Samples - Alexa SingleBot",
+  "author": "Oracle Bots Team",
+  "license": "ISC",
+  "repository": {},
+  "main": "index.js",
+  "dependencies": {
+    "alexa-app": "^4.2.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "joi": "^9.2.0",
+    "pubsub-js": "^1.5.4",
+    "underscore": "^1.8.3",
+    "util": "^0.10.3",
+    "locutus": "^2.0.6",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "joi": "^9.2.0",
+    "mocha": "^3.1.2",
+    "request": "^2.79.0",
+    "sinon": "^4.1.2",
+    "supertest": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon"
+  }
+}

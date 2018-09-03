@@ -1,0 +1,26 @@
+{
+  "name": "bots-js-utils",
+  "version": "0.1.0",
+  "description": "Oracle Bots JS utilties",
+  "author": "Oracle Bots Team",
+  "license": "ISC",
+  "repository": {},
+  "main": "app.js",
+  "dependencies": {
+    "locutus": "^2.0.6",
+    "request": "^2.79.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "joi": "^9.2.0",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "joi-browser": "^9.1.0",
+    "joi": "^9.2.0"
+  },
+  "scripts": {
+    "test": "mocha tests/*"
+  }
+}

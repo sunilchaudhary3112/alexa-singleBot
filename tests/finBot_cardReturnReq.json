@@ -1,0 +1,228 @@
+{
+  "session": {
+    "new": false,
+    "sessionId": "SessionId.19f8f704-7211-4115-bdce-a8bf78ca1ef1",
+    "application": {
+      "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+    },
+    "attributes": {
+      "botMessages": [
+        {
+          "text": "Here are the 10 most recent debits in your credit card account. ",
+          "type": "text"
+        },
+        {
+          "layout": "horizontal",
+          "cards": [
+            {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg",
+              "description": "August 08, 2017 > $-103.28",
+              "title": "#1 - LetsTravel",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg"
+                }
+              ]
+            },
+            {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+              "description": "August 23, 2017 > $-8.25",
+              "title": "#2 - Gas2Go",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+                }
+              ]
+            },
+            {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png",
+              "description": "August 23, 2017 > $-60",
+              "title": "#3 - PizzaUGotcha",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png"
+                }
+              ]
+            },
+            {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png",
+              "description": "August 30, 2017 > $-234",
+              "title": "#4 - NextGenRetail",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png"
+                }
+              ]
+            },
+            {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+              "description": "September 07, 2017 > $-45",
+              "title": "#5 - Gas2Go",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+                }
+              ]
+            },
+            {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png",
+              "description": "September 07, 2017 > $-8.8",
+              "title": "#6 - Payment uber",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png"
+                }
+              ]
+            }
+          ],
+          "type": "card"
+        }
+      ],
+      "botMenuResponseMap": {
+        "Open": {
+          "type": "message",
+          "action": {
+            "label": "Open",
+            "type": "url",
+            "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png"
+          }
+        },
+        "Return": {
+          "type": "cardReturn",
+          "action": {
+            "type": "custom",
+            "value": {
+              "type": "messagePayload",
+              "value": {
+                "layout": "horizontal",
+                "cards": [
+                  {
+                    "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg",
+                    "description": "August 08, 2017 > $-103.28",
+                    "title": "#1 - LetsTravel",
+                    "actions": [
+                      {
+                        "label": "Open",
+                        "type": "url",
+                        "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg"
+                      }
+                    ]
+                  },
+                  {
+                    "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+                    "description": "August 23, 2017 > $-8.25",
+                    "title": "#2 - Gas2Go",
+                    "actions": [
+                      {
+                        "label": "Open",
+                        "type": "url",
+                        "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+                      }
+                    ]
+                  },
+                  {
+                    "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png",
+                    "description": "August 23, 2017 > $-60",
+                    "title": "#3 - PizzaUGotcha",
+                    "actions": [
+                      {
+                        "label": "Open",
+                        "type": "url",
+                        "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png"
+                      }
+                    ]
+                  },
+                  {
+                    "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png",
+                    "description": "August 30, 2017 > $-234",
+                    "title": "#4 - NextGenRetail",
+                    "actions": [
+                      {
+                        "label": "Open",
+                        "type": "url",
+                        "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png"
+                      }
+                    ]
+                  },
+                  {
+                    "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+                    "description": "September 07, 2017 > $-45",
+                    "title": "#5 - Gas2Go",
+                    "actions": [
+                      {
+                        "label": "Open",
+                        "type": "url",
+                        "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+                      }
+                    ]
+                  },
+                  {
+                    "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png",
+                    "description": "September 07, 2017 > $-8.8",
+                    "title": "#6 - Payment uber",
+                    "actions": [
+                      {
+                        "label": "Open",
+                        "type": "url",
+                        "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png"
+                      }
+                    ]
+                  }
+                ],
+                "type": "card"
+              }
+            }
+          }
+        }
+      },
+      "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.f68186f6-e881-463f-b9eb-5bc714983e14",
+    "intent": {
+      "name": "CommandBot",
+      "slots": {
+        "command": {
+          "name": "command",
+          "value": "return"
+        }
+      }
+    },
+    "locale": "en-US",
+    "timestamp": "2017-11-22T01:05:16Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}

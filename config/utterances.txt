@@ -1,0 +1,2 @@
+CommandBot {do something|command}
+CommandBot {anything|command}

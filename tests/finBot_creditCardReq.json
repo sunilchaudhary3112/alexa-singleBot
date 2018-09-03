@@ -1,0 +1,126 @@
+{
+  "session": {
+    "new": false,
+    "sessionId": "SessionId.c7ede6a7-42aa-41d4-a2d4-813b8c4fefdf",
+    "application": {
+      "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+    },
+    "attributes": {
+      "botMessages": [
+        {
+          "text": "For which account do you want to see transactions?",
+          "type": "text",
+          "actions": [
+            {
+              "postback": {
+                "variables": {
+                  "accountType": "savings"
+                },
+                "state": "askTxnsAccountType"
+              },
+              "label": "savings",
+              "type": "postback"
+            },
+            {
+              "postback": {
+                "variables": {
+                  "accountType": "checking"
+                },
+                "state": "askTxnsAccountType"
+              },
+              "label": "checking",
+              "type": "postback"
+            },
+            {
+              "postback": {
+                "variables": {
+                  "accountType": "credit card"
+                },
+                "state": "askTxnsAccountType"
+              },
+              "label": "credit card",
+              "type": "postback"
+            }
+          ]
+        }
+      ],
+      "botMenuResponseMap": {
+        "savings": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "accountType": "savings"
+              },
+              "state": "askTxnsAccountType"
+            },
+            "label": "savings",
+            "type": "postback"
+          }
+        },
+        "checking": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "accountType": "checking"
+              },
+              "state": "askTxnsAccountType"
+            },
+            "label": "checking",
+            "type": "postback"
+          }
+        },
+        "credit card": {
+          "type": "message",
+          "action": {
+            "postback": {
+              "variables": {
+                "accountType": "credit card"
+              },
+              "state": "askTxnsAccountType"
+            },
+            "label": "credit card",
+            "type": "postback"
+          }
+        }
+      },
+      "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.e959c928-c8e6-4151-a39f-e3351999bd62",
+    "intent": {
+      "name": "CommandBot",
+      "slots": {
+        "command": {
+          "name": "command",
+          "value": "credit cards"
+        }
+      }
+    },
+    "locale": "en-US",
+    "timestamp": "2017-11-21T21:36:09Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}

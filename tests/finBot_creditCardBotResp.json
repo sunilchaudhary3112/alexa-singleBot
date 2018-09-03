@@ -1,0 +1,69 @@
+{
+  "messagePayload": {
+    "text": "What type of transactions do you want to see?",
+    "type": "text",
+    "actions": [
+      {
+        "postback": {
+          "variables": {
+            "txnType": "deposits"
+          },
+          "state": "askTxnType"
+        },
+        "label": "deposits",
+        "type": "postback"
+      },
+      {
+        "postback": {
+          "variables": {
+            "txnType": "withdrawals"
+          },
+          "state": "askTxnType"
+        },
+        "label": "withdrawals",
+        "type": "postback"
+      },
+      {
+        "postback": {
+          "variables": {
+            "txnType": "payments"
+          },
+          "state": "askTxnType"
+        },
+        "label": "payments",
+        "type": "postback"
+      },
+      {
+        "postback": {
+          "variables": {
+            "txnType": "checks"
+          },
+          "state": "askTxnType"
+        },
+        "label": "checks",
+        "type": "postback"
+      },
+      {
+        "postback": {
+          "variables": {
+            "txnType": "debits"
+          },
+          "state": "askTxnType"
+        },
+        "label": "debits",
+        "type": "postback"
+      },
+      {
+        "postback": {
+          "variables": {
+            "txnType": "credits"
+          },
+          "state": "askTxnType"
+        },
+        "label": "credits",
+        "type": "postback"
+      }
+    ]
+  },
+  "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+}

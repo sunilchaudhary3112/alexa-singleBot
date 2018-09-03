@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "intent": "CommandBot",
+      "slots": [
+        {
+          "name": "command",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}

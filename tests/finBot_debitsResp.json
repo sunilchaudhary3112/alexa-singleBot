@@ -1,0 +1,226 @@
+{
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "ssml": "<speak>Here are the 10 most recent debits in your credit card account. You can choose from the following cards for more information: Card #1 - LetsTravel, Card #2 - Gas2Go, Card #3 - PizzaUGotcha, Card #4 - NextGenRetail, Card #5 - Gas2Go, Card #6 - Payment uber.</speak>",
+      "type": "SSML"
+    },
+    "directives": [],
+    "shouldEndSession": false
+  },
+  "sessionAttributes": {
+    "botMessages": [
+      {
+        "text": "Here are the 10 most recent debits in your credit card account. ",
+        "type": "text"
+      },
+      {
+        "layout": "horizontal",
+        "cards": [
+          {
+            "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg",
+            "description": "August 08, 2017 > $-103.28",
+            "title": "#1 - LetsTravel",
+            "actions": [
+              {
+                "label": "Open",
+                "type": "url",
+                "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg"
+              }
+            ]
+          },
+          {
+            "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+            "description": "August 23, 2017 > $-8.25",
+            "title": "#2 - Gas2Go",
+            "actions": [
+              {
+                "label": "Open",
+                "type": "url",
+                "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+              }
+            ]
+          },
+          {
+            "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png",
+            "description": "August 23, 2017 > $-60",
+            "title": "#3 - PizzaUGotcha",
+            "actions": [
+              {
+                "label": "Open",
+                "type": "url",
+                "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png"
+              }
+            ]
+          },
+          {
+            "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png",
+            "description": "August 30, 2017 > $-234",
+            "title": "#4 - NextGenRetail",
+            "actions": [
+              {
+                "label": "Open",
+                "type": "url",
+                "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png"
+              }
+            ]
+          },
+          {
+            "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+            "description": "September 07, 2017 > $-45",
+            "title": "#5 - Gas2Go",
+            "actions": [
+              {
+                "label": "Open",
+                "type": "url",
+                "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+              }
+            ]
+          },
+          {
+            "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png",
+            "description": "September 07, 2017 > $-8.8",
+            "title": "#6 - Payment uber",
+            "actions": [
+              {
+                "label": "Open",
+                "type": "url",
+                "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png"
+              }
+            ]
+          }
+        ],
+        "type": "card"
+      }
+    ],
+    "botMenuResponseMap": {
+      "Card #1 - LetsTravel": {
+        "type": "card",
+        "action": {
+          "type": "custom",
+          "value": {
+            "type": "card",
+            "value": {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg",
+              "description": "August 08, 2017 > $-103.28",
+              "title": "#1 - LetsTravel",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509146377/FinBot/bon-voyage.jpg"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Card #2 - Gas2Go": {
+        "type": "card",
+        "action": {
+          "type": "custom",
+          "value": {
+            "type": "card",
+            "value": {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+              "description": "August 23, 2017 > $-8.25",
+              "title": "#2 - Gas2Go",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Card #3 - PizzaUGotcha": {
+        "type": "card",
+        "action": {
+          "type": "custom",
+          "value": {
+            "type": "card",
+            "value": {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png",
+              "description": "August 23, 2017 > $-60",
+              "title": "#3 - PizzaUGotcha",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/restaurant.png"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Card #4 - NextGenRetail": {
+        "type": "card",
+        "action": {
+          "type": "custom",
+          "value": {
+            "type": "card",
+            "value": {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png",
+              "description": "August 30, 2017 > $-234",
+              "title": "#4 - NextGenRetail",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/supermarket.png"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Card #5 - Gas2Go": {
+        "type": "card",
+        "action": {
+          "type": "custom",
+          "value": {
+            "type": "card",
+            "value": {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png",
+              "description": "September 07, 2017 > $-45",
+              "title": "#5 - Gas2Go",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/petrol-stations.png"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "Card #6 - Payment uber": {
+        "type": "card",
+        "action": {
+          "type": "custom",
+          "value": {
+            "type": "card",
+            "value": {
+              "imageUrl": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png",
+              "description": "September 07, 2017 > $-8.8",
+              "title": "#6 - Payment uber",
+              "actions": [
+                {
+                  "label": "Open",
+                  "type": "url",
+                  "url": "https://res.cloudinary.com/dj21m905v/image/upload/v1509148287/FinBot/taxi.png"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+  }
+}

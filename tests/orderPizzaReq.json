@@ -1,0 +1,46 @@
+{
+  "session": {
+    "sessionId": "SessionId.9fc16bac-e177-4f88-a59a-5c4694329375",
+    "application": {
+      "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY",
+      "accessToken": null
+    },
+    "new": true
+  },
+  "request": {
+    "intent": {
+      "name": "CommandBot",
+      "slots": {
+        "command": {
+          "name": "command",
+          "value": "order pizza"
+        }
+      }
+    },
+    "requestId": "EdwRequestId.f7a4e58f-d7e8-44e7-b41f-80d164813eac",
+    "type": "IntentRequest",
+    "locale": "en-US",
+    "timestamp": "2017-11-16T05:47:48Z"
+  },
+  "context": {
+    "AudioPlayer": {
+      "playerActivity": "IDLE"
+    },
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.b6a603ad-5f3f-471e-b509-922ddc2aded9"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AHT5MZCUGP3ZTWHBEODMPOEABX3ZVF4OLZXVGCEBZMQIHKUTAYSSXXUYUV5CD5TH3XWTYO522IYQFSBVXIL5VOQOIAFZ2ZSTIINMVE2IOAWSMXX4J75ZWTKP6R3V2PA4NEJGXBWAMGGOFMZE4PRPOXRCGJTIYOEKJUEHY2INOFP7VNJD6HPXB6JVZ2QY4S6BUTOA42LRDTQKCEY"
+      },
+      "device": {
+        "supportedInterfaces": {}
+      }
+    }
+  },
+  "version": "1.0"
+}
