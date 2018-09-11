@@ -11,7 +11,7 @@ const webhookUtil = require('./bots-js-utils/lib/webhook/webhookUtil.js');
 
 PubSub.immediateExceptions = true;
 
-module.exports = function() {
+module.exports = function () {
   var self = this;
 
   //replace these settings to point to your webhook channel
@@ -20,23 +20,23 @@ module.exports = function() {
     waitForMoreResponsesMs: 200,  //milliseconds to wait for additional webhook responses
     amzn_appId: "amzn1.ask.skill.812c0f02-6773-414e-a8a8-dce5295442e6",
     channelSecretKey: 'ONuMjW3jk5YTVFyUEUzSca30gGy30JK0',
-    channelUrl: 'https://e87476aa.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/0B39FF13-11B4-429F-9940-F1407CA9FFDC'
+    channelUrl: 'http://bots-connectors:8000/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/0B39FF13-11B4-429F-9940-F1407CA9FFDC'
   };
 
   this.randomIntInc = function (low, high) {
     return Math.floor(Math.random() * (high - low + 1) + low);
   };
 
-  this.setConfig = function(config) {
+  this.setConfig = function (config) {
     metadata = _.extend(metadata, _.pick(config, _.keys(metadata)));
   }
 
   // expose this function to be stubbed
-  this.sendWebhookMessageToBot= function (channelUrl, channelSecretKey, userId, messagePayload, additionalProperties, callback) {
+  this.sendWebhookMessageToBot = function (channelUrl, channelSecretKey, userId, messagePayload, additionalProperties, callback) {
     webhookUtil.messageToBotWithProperties(channelUrl, channelSecretKey, userId, messagePayload, additionalProperties, callback);
   };
 
-  this.init= function (config) {
+  this.init = function (config) {
 
     var app = express();
     var alexaRouter = express.Router();
@@ -52,11 +52,11 @@ module.exports = function() {
     }
 
     // compile the list of actions, global actions and other menu options
-    function menuResponseMap (resp, card) {
+    function menuResponseMap(resp, card) {
       var responseMap = {};
 
-      function addToMap (label, type, action) {
-        responseMap[label] = {type: type, action: action};
+      function addToMap(label, type, action) {
+        responseMap[label] = { type: type, action: action };
       }
 
       if (!card) {
@@ -73,7 +73,7 @@ module.exports = function() {
         if (resp.type === 'card' && resp.cards && resp.cards.length > 0) {
           resp.cards.forEach(function (card) {
             //special menu option to navigate to card detail
-            addToMap('Card ' + card.title, 'card', {type: 'custom', value: {type: 'card', value: card}});
+            addToMap('Card ' + card.title, 'card', { type: 'custom', value: { type: 'card', value: card } });
           });
         }
       } else {
@@ -83,13 +83,13 @@ module.exports = function() {
           });
         }
         //special menu option to return to main message from the card
-        addToMap('Return', 'cardReturn', {type: 'custom', value: {type: 'messagePayload', value: resp}});
+        addToMap('Return', 'cardReturn', { type: 'custom', value: { type: 'messagePayload', value: resp } });
       }
       return responseMap;
     }
 
     if (metadata.allowConfigUpdate) {
-      app.put('/config', bodyParser.json(), function(req, res){
+      app.put('/config', bodyParser.json(), function (req, res) {
         let config = req.body;
         logger.info(config);
         if (config) {
@@ -178,7 +178,7 @@ module.exports = function() {
 
           var sendMessageToBot = function (messagePayload) {
             logger.info('Creating new promise for', messagePayload);
-            return new Promise(function(resolve, reject){
+            return new Promise(function (resolve, reject) {
               var commandResponse = function (msg, data) {
                 logger.info('Received callback message from webhook channel');
                 var resp = data;
@@ -256,11 +256,11 @@ module.exports = function() {
                   }
                   if (selectedMessage) {
                     //session.set("botMessages", [selectedMessage]);
-                      session.set("botMenuResponseMap", menuResponseMap(selectedMessage, selectedCard));
-                      let messageToAlexa = messageModelUtil.cardToText(selectedCard, 'Card');
-                      logger.info("Message to Alexa (card):", messageToAlexa)
-                      alexa_res.say(messageToAlexa);
-                      return alexa_res.send();
+                    session.set("botMenuResponseMap", menuResponseMap(selectedMessage, selectedCard));
+                    let messageToAlexa = messageModelUtil.cardToText(selectedCard, 'Card');
+                    logger.info("Message to Alexa (card):", messageToAlexa)
+                    alexa_res.say(messageToAlexa);
+                    return alexa_res.send();
                   }
                 }
                 // if it is navigating back from card detail
@@ -271,16 +271,16 @@ module.exports = function() {
                 }
                 if (returnMessage) {
                   //session.set("botMessages", [returnMessage]);
-                    session.set("botMenuResponseMap", _.reduce(botMessages, function(memo, msg){
-                      return Object.assign(memo,menuResponseMap(msg));
-                    }, {}));
-                    //session.set("botMenuResponseMap", menuResponseMap(returnMessage));
-                    _.each(botMessages, function(msg){
-                      let messageToAlexa = messageModelUtil.convertRespToText(msg);
-                      logger.info("Message to Alexa (return from card):", messageToAlexa);
-                      alexa_res.say(messageToAlexa);
-                    })
-                    return alexa_res.send();
+                  session.set("botMenuResponseMap", _.reduce(botMessages, function (memo, msg) {
+                    return Object.assign(memo, menuResponseMap(msg));
+                  }, {}));
+                  //session.set("botMenuResponseMap", menuResponseMap(returnMessage));
+                  _.each(botMessages, function (msg) {
+                    let messageToAlexa = messageModelUtil.convertRespToText(msg);
+                    logger.info("Message to Alexa (return from card):", messageToAlexa);
+                    alexa_res.say(messageToAlexa);
+                  })
+                  return alexa_res.send();
                 }
               }
             } else {
@@ -326,7 +326,7 @@ module.exports = function() {
       }
     };
     //alexa_app.express(alexaRouter, "/", true);
-    alexa_app.express({router: alexaRouter, checkCert: false});
+    alexa_app.express({ router: alexaRouter, checkCert: false });
 
     app.locals.endpoints = [];
     app.locals.endpoints.push({
