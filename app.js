@@ -1,3 +1,5 @@
+// https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/e6ee15e8-2e68-4a1a-adad-eac941a469d4/File/e27ca2881658e082d08652472cfc24ce/adding_alexa_as_a_channel_in_your_chatbot_v3.pdf
+
 const alexa = require("alexa-app");
 const _ = require("underscore");
 const express = require('express');
@@ -19,7 +21,7 @@ module.exports = function () {
     allowConfigUpdate: true, //set to false to turn off REST endpoint of allowing update of metadata
     waitForMoreResponsesMs: 200,  //milliseconds to wait for additional webhook responses
               // amzn1.ask.skill.df22d270-6bc3-4a37-8e53-b8d7a1f1717f
-    amzn_appId: "amzn1.ask.skill.33b43a31-cb55-478b-94f3-68e4d7d7c379",
+    amzn_appId: "amzn1.ask.skill.16dc364c-7062-4783-b951-708d5c0f181f",
     channelSecretKey: 'iYy1r1bdy5NaNgXUrt0TVvtU9JZ7LiLl',
     channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/70DD6A24-8916-4162-9518-AD7C786AC922'        
     // channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/E78A0816-F388-4C3E-AF93-1D1C543E931A'    
