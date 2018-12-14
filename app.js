@@ -21,9 +21,9 @@ module.exports = function () {
     allowConfigUpdate: true, //set to false to turn off REST endpoint of allowing update of metadata
     waitForMoreResponsesMs: 200,  //milliseconds to wait for additional webhook responses
               // amzn1.ask.skill.df22d270-6bc3-4a37-8e53-b8d7a1f1717f
-    amzn_appId: "amzn1.ask.skill.df22d270-6bc3-4a37-8e53-b8d7a1f1717f",
-    channelSecretKey: 'AIWvBPHXhxhFdKV47IDu1fF2pxcsvmLn',
-    channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/E78A0816-F388-4C3E-AF93-1D1C543E931A'        
+    amzn_appId: "amzn1.ask.skill.33b43a31-cb55-478b-94f3-68e4d7d7c379",
+    channelSecretKey: 'A6YgUUjLDRU5AIlwyBYrJ4la1Ts2G7nx',
+    channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/F5E71112-73C0-4CCF-B5E4-BC3C9B334B2F'        
     // channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/E78A0816-F388-4C3E-AF93-1D1C543E931A'    
     // channelUrl: 'https://e87476aa.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/AE1803AB-3A46-4A40-A34A-13B4989C5DD5'
   };
