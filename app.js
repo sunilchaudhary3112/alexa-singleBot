@@ -13,6 +13,8 @@ const webhookUtil = require('./bots-js-utils/lib/webhook/webhookUtil.js');
 
 PubSub.immediateExceptions = true;
 
+//ibcs url -- https://secret-coast-76241.herokuapp.com/singleBotWebhook/messages
+
 module.exports = function () {
   var self = this;
 
@@ -20,10 +22,12 @@ module.exports = function () {
   var metadata = {
     allowConfigUpdate: true, //set to false to turn off REST endpoint of allowing update of metadata
     waitForMoreResponsesMs: 200,  //milliseconds to wait for additional webhook responses
-              // amzn1.ask.skill.df22d270-6bc3-4a37-8e53-b8d7a1f1717f
+            
     amzn_appId: "amzn1.ask.skill.df22d270-6bc3-4a37-8e53-b8d7a1f1717f",
-    channelSecretKey: 'AIWvBPHXhxhFdKV47IDu1fF2pxcsvmLn',
-    channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/E78A0816-F388-4C3E-AF93-1D1C543E931A'        
+    channelSecretKey: '0PZGzAzryIVSQez1DSX7wdZKi8Vb5Z9A', // exxaro
+    //ninja botchannelSecretKey: 'AIWvBPHXhxhFdKV47IDu1fF2pxcsvmLn',
+    channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/CD62278E-4C4E-4F90-BAB2-C1FD0B82F32E'        
+    //ninja bot channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/E78A0816-F388-4C3E-AF93-1D1C543E931A'        
     // channelUrl: 'https://b2b34218.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/E78A0816-F388-4C3E-AF93-1D1C543E931A'    
     // channelUrl: 'https://e87476aa.ngrok.io/connectors/v1/tenants/chatbot-tenant/listeners/webhook/channels/AE1803AB-3A46-4A40-A34A-13B4989C5DD5'
   };
